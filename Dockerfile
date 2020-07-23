@@ -1,6 +1,7 @@
 FROM alpine:3
 
-RUN apk add curl python2
+RUN apk add curl python3 \
+    && ln -s /usr/bin/python3 /usr/bin/python
 
 # NOTE AWS CLI v2 binaries are compiled against glibc and are currently not
 # compatible with musl libc, hence we install v1 here; for more information
