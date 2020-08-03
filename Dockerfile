@@ -1,6 +1,9 @@
 FROM centos:8
 
-RUN yum install -y unzip \
+RUN yum install -y \
+    epel-release \
+    jq \
+    unzip \
     && yum clean all
 
 RUN curl https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
