@@ -1,8 +1,8 @@
-FROM alpine:3.23
+FROM alpine:3.24
 
 RUN apk add --no-cache \
-        aws-cli=2.32.7-r0 \
-        bash=5.3.3-r1 \
-        curl=8.17.0-r1 \
-        jq=1.8.1-r0 \
-        python3=3.12.12-r0
+        aws-cli=2.34.63-r0 \
+        bash=5.3.9-r1 \
+        curl=8.22.0-r0 \
+        jq=1.8.2-r0 \
+        python3=3.14.8-r0
